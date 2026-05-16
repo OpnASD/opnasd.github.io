@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(40, 39, 43);
+    color: rgb(236, 238, 245);
+}
+.btn {
+    color: rgb(236, 238, 245);
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1px 5px;
+    margin: 1px 2px;
+    align-items: center;
+    display: inline-flex;
+    font-size: 15pt;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 52, 56);
+    padding: 5px 3px;
+    gap: 4px;
+    border-radius: 10px;
+}
+header .right {
+    display: flex;
+    gap: 4px;
+}
+.lang {
+    display: flex;
+    flex-direction: column; /* вертикальная раскладка */
+    gap: 4px;
+    margin-left: auto; /* прижимаем всю колонку вправо */
+}
+.telegram {
+    color: rgb(128, 152, 236);
+    text-decoration: none;
+}
+.min {
+    padding: 1px 1px;
+    margin: 1px 1px;
+    font-size: 10pt;
+}
