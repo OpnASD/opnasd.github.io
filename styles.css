@@ -33,11 +33,31 @@ header .right {
     margin-left: auto; /* прижимаем всю колонку вправо */
 }
 .telegram {
-    color: rgb(128, 152, 236);
+    color: rgb(109, 201, 255);
+    
     text-decoration: none;
 }
 .min {
     padding: 1px 1px;
     margin: 1px 1px;
     font-size: 10pt;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+a {
+    color: rgb(128, 152, 236);
+}
+th, td {
+    padding: 10px 12px;
+}
+.main-logo {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20pt;
+    text-decoration: none;
+    color: rgb(243, 196, 255);
 }
