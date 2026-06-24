@@ -4,39 +4,83 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>OpenASD</title>
         <link href="styles.css" rel="stylesheet">
+        <style>
+            .btn-accent {
+                gap: 0px;
+                padding: 10px 20px;
+            }
+            .btn-old {
+                color: var(--text-muted);
+                font-style: italic;
+                
+            }
+            .download {
+                display: flex;
+                
+        }
+            .download .info {
+                display: flex;
+                flex-direction: column;
+            }
+            .download .but {
+                display: flex;
+                flex-direction: column;
+                
+            }
+            main {
+            flex: 1;
+            padding: 60px 64px;
+            }
+
+            .download {
+            background: var(--bg-section);
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 24px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            }
+
+            .download .but {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 8px;
+            }
+            
+        </style>
     </head>
     <body>
-        <header>
+        <nav>
             <div>
-                <a class="main-logo" href="/"><img src="content/images/logo.png" width="10%"> OpenASD</a>
+                <a class="main-logo" href="/"><img src="content/images/logo.png" width="7%"></a>
             </div>
             <div class="right">
                 <a href="faq.html" class="btn ">FAQ</a>
-                <a href="download.html" class="btn ">Download</a>
+                <a href="download.html" class="btn">Download</a>
                 <a href="https://github.com/komarufan/OpenASD" class="btn">Sources</a>
                 <a href="https://wiki.openasd.msh356.store" class="btn">Wiki</a>
-                <div class="lang">
-                    <a href="download.ru.html" class="btn min">RU</a>
-                    <a href="download.html" class="btn min">EN</a>
-                </div>   
             </div>
-        </header>
-            <h1>Downloads</h1>
-        <table border="1">
-            <tbody>
-                
-                <tr>
-                    <td>install100.iso</td>
-                    <td>An ISO 9660 image that can be used to install OpenASD
-                        <hr>
-                        <a href="content/static/install100.iso">amd64</a>
-                        <a href="install.iso.html">old releases</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        </nav>
+        <main>
+            <h1>Download</h1>
+            <p>placeholderasdadsadsasdsasdadsadsadss</p>
+        <div class="download">
+            <div class="info">
+                <h3 class="image">install100.iso</h3>
+                <p>An ISO 9660 image that can be used to install OpenASD</p>
+            </div>
+            <div class="but">
+                <a href="content/static/install100.iso" class="btn btn-accent">amd64</a>
+                <a href="install.iso.html" class="btn btn-old">old releases →</a>
+            </div>
+        </div>
+        </main>
         <footer> 
-            <a href="https://t.me/openasd_ru" class="telegram"><img src="content/images/telegram.png" width="1%"> Telegram chat (RU)</a>
+            <a href="https://t.me/openasd_ru" class="telegram"><img src="content/images/telegram.png" width="2%"> Telegram chat (RU)</a>
             <p>Project licensed by BSD license.</p>
             <p>2026-2026</p>
         </footer>

@@ -1,63 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #0d1117;
+    --bg-nav: #161b22;
+    --bg-section: #1c2128;
+    --accent: #cf424b;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+}
 body {
-    background-color: rgb(40, 39, 43);
-    color: rgb(236, 238, 245);
+    background-color: var(--bg-dark);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.btn {
-    color: rgb(236, 238, 245);
-    border: 1px solid;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 1px 5px;
-    margin: 1px 2px;
-    align-items: center;
-    display: inline-flex;
-    font-size: 15pt;
+main {
+    padding-left: 30px;
 }
-header {
+nav {
+    background-color: var(--bg-nav);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(51, 52, 56);
-    padding: 5px 3px;
-    gap: 4px;
-    border-radius: 10px;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-header .right {
-    display: flex;
-    gap: 4px;
-}
-.lang {
-    display: flex;
-    flex-direction: column; /* вертикальная раскладка */
-    gap: 4px;
-    margin-left: auto; /* прижимаем всю колонку вправо */
-}
-.telegram {
-    color: rgb(109, 201, 255);
-    
+
+.btn {
+    color: var(--text);
     text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.2s;
 }
-.min {
-    padding: 1px 1px;
-    margin: 1px 1px;
-    font-size: 10pt;
+
+.btn:hover {
+    background-color: rgba(255,255,255,0.08);
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    
+
+.top {
+    background-color: var(--bg-dark);
+    padding: 80px 60px;
 }
-a {
-    color: rgb(128, 152, 236);
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--text);
 }
-th, td {
-    padding: 10px 12px;
+
+h3 {
+    font-size: 22px;
+    color: var(--accent);
+    margin-bottom: 16px;
 }
-.main-logo {
-    font-family: 'Courier New', Courier, monospace;
-    display: inline-flex;
+.image {
+    gap: 0px;
+    padding-left: 10px;
+
+}
+p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.btn-accent {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #000;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 24px;
+}
+
+.btn-accent:hover {
+    background-color: #d32c64;
+}
+
+section {
+    background-color: var(--bg-section);
+    padding: 60px;
+}
+
+section:nth-child(even) {
+    background-color: var(--bg-dark);
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+.section p{
+    padding-left: 10px;
+}
+ul {
+    color: var(--text-muted);
+    padding-left: 40px;
+    line-height: 2;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #30363d;
+}
+
+footer {
+    margin-top: auto;
+    background-color: var(--bg-nav);
+    padding: 24px 60px;
+    color: var(--text-muted);
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
     align-items: center;
-    font-size: 20pt;
+}
+
+.telegram {
+    color: #39a6d1;
     text-decoration: none;
-    color: rgb(243, 196, 255);
+}
+.telegram:hover {
+    color: #44c8fc;
 }
